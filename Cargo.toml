@@ -1,0 +1,27 @@
+[package]
+name = "clr_hosting"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+zeroize = "1.6.0"
+lazy_static = "1.4.0"
+
+[dependencies.windows-core]
+version = "0.51.0"
+features = [
+    "implement",
+]
+
+[dependencies.windows]
+version = "0.51.0"
+features = [
+    "implement",
+    "Win32_Foundation",
+    "Win32_System_ClrHosting",
+    "Win32_System_Memory",
+    "Win32_System_Ole",
+    "Win32_System_Variant",
+    "Win32_System_Com",
+    "Win32_System_LibraryLoader"
+]
